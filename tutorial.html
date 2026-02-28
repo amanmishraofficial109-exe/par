@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Craft Guide | Tutorial</title>
+    <link rel="stylesheet" href="parallex_styles.css">
+    <link rel="stylesheet" href="craft_style.css">
+</head>
+<body style="background: #fdfbf9;">
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="javascript:void(0)" onclick="openContact()">Contact</a>
+        </nav>
+    </header>
+
+    <main style="padding: 150px 10% 80px;">
+        <h1 id="tut-title" style="color: #003329; margin-bottom: 40px; font-size: 2.4rem;">Loading...</h1>
+        
+        <h2 style="color: #359381; margin-bottom: 25px;">Written Steps</h2>
+        <div id="steps-container" style="display: flex; flex-direction: column; gap: 15px;">
+            </div>
+
+        <div style="margin-top: 60px;">
+            <h2 style="color: #003329; margin-bottom: 20px;">Watch Full Tutorial</h2>
+            <div class="iframe-container" style="position: relative; padding-bottom: 56.25%; height: 0; border-radius: 20px; overflow: hidden; background: #000;">
+                <iframe id="tut-video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <div id="contact-modal" class="contact-overlay" onclick="closeContact()">
+        <div class="contact-pill" onclick="event.stopPropagation()">
+            aman.mishra.dev@email.com
+        </div>
+    </div>
+
+    <script src="parallex_script.js"></script>
+    <script src="tutorial_logic.js"></script>
+</body>
+</html>

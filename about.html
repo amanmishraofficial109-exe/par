@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Craft Land</title>
+    <link rel="stylesheet" href="parallex_styles.css">
+    <link rel="stylesheet" href="craft_style.css">
+    <style>
+        .about-hero {
+            background: #003329;
+            color: #ffebd6;
+            padding: 150px 10% 80px;
+            text-align: center;
+        }
+        .content-wrap { padding: 60px 10%; line-height: 1.8; color: #333; }
+        .tech-stack { display: flex; justify-content: center; gap: 20px; margin-top: 30px; flex-wrap: wrap; }
+        .tag { background: #359381; color: #fff; padding: 5px 15px; border-radius: 20px; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="service.html">Service</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about-hero">
+        <h1>About the Creator</h1>
+        <p>Aman Mishra | BSc IT Developer</p>
+    </section>
+
+    <main class="content-wrap">
+        <h2>The Vision</h2>
+        <p>Currently in my 4th semester of BSc IT, I created <strong>Craft Land</strong> to combine my love for interactive UI with automated content delivery. This project is a testament to how the YouTube API can be harnessed to create specialized, distraction-free learning environments.</p>
+        
+        <h2>Technical Expertise</h2>
+        <p>Beyond frontend design, I am deeply involved in high-performance computing and Cloud engineering. My interests range from <strong>AWS Cloud architecture</strong> to low-level <strong>8051 Microcontroller</strong> programming.</p>
+        
+        <div class="tech-stack">
+            <span class="tag">Cloud (AWS)</span>
+            <span class="tag">Embedded Systems</span>
+            <span class="tag">DevOps</span>
+            <span class="tag">JavaScript API Integration</span>
+        </div>
+    </main>
+
+    <footer id="contact" style="padding: 40px; background: #003329; color: #ffebd6; text-align: center;">
+        <p>© 2026 Craft Land | Designed by Aman Mishra</p>
+        <div id="contact-modal" class="modal-overlay">
+    <div class="contact-card">
+        <h3>Get in Touch</h3>
+        <p>Aman Mishra | BSc IT Developer</p>
+        <div class="email-box" id="email-text">jalwa.com </div>
+        
+        <div class="modal-buttons">
+            <button class="modal-btn copy-btn" onclick="copyEmail()">Copy Email</button>
+            <button class="modal-btn close-btn" onclick="closeContactPopup()">Close</button>
+        </div>
+    </div>
+</div>
+
+    </footer>
+    <div id="contact-modal" class="contact-overlay" onclick="closeContact()">
+    <div class="contact-pill" onclick="event.stopPropagation()">
+        aman.mishra.dev@email.com
+    </div>
+</div>
+</body>
+</html>

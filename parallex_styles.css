@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background: #f9f9f9; min-height: 100vh; overflow-x: hidden; }
+
+header { 
+    position: absolute; top: 0; left: 0; width: 100%; padding: 30px 100px; 
+    display: flex; justify-content: space-between; align-items: center; z-index: 100; 
+}
+.logo { font-size: 2em; color: #359381; font-weight: 700; }
+.navigation a { text-decoration: none; color: #359381; padding: 8px 18px; border-radius: 25px; margin: 0 5px; font-weight: 600; transition: 0.3s; }
+.navigation a.active, .navigation a:hover { background: #359381; color: #fff; }
+
+.parallax { position: relative; display: flex; justify-content: center; align-items: center; height: 100vh; background: #003329; overflow: hidden; }
+#text { position: absolute; font-size: 5em; color: #fff; z-index: 1; }
+.parallax img { position: absolute; top: 0; left: 0; width: 100%; pointer-events: none; }
+#scroll-arrow { position: absolute; bottom: 40px; border-radius: 50%; width: 60px; height: 60px; border: none; cursor: pointer; background: #ffebd6; font-size: 2rem; z-index: 10; }

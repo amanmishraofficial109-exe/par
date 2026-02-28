@@ -1,0 +1,26 @@
+/* GALLERY SETUP */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 40px; padding: 40px 10%; }
+.video-card { background: white; border-radius: 20px; overflow: hidden; transition: 0.3s; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.video-card:hover { transform: translateY(-10px); }
+.thumbnail { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+
+.craft-banner { text-align: center; padding: 60px 20px; background: #003329; color: white; }
+.search-container { margin-top: 20px; display: flex; justify-content: center; gap: 10px; }
+#search-input { padding: 10px 20px; border-radius: 30px; border: none; width: 300px; }
+#search-btn { padding: 10px 25px; border-radius: 30px; border: none; background: #ffebd6; cursor: pointer; font-weight: 600; }
+
+/* CONTACT PILL MODAL */
+.contact-overlay {
+    display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85); z-index: 10000; justify-content: center; align-items: center;
+    backdrop-filter: blur(10px);
+}
+.contact-pill {
+    background: #003329; color: #ffebd6; padding: 25px 65px;
+    border-radius: 100px; /* Perfect semicircle edges */
+    font-size: 1.4rem; font-weight: 600; border: 2px solid #359381;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+/* TUTORIAL STEPS */
+.step-box { display: flex; gap: 20px; background: white; padding: 30px; border-radius: 20px; align-items: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }

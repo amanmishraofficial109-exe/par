@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service | Platform Features</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="parallex_styles.css">
+    <link rel="stylesheet" href="craft_style.css">
+</head>
+<body style="background: #fdfbf9;">
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html" class="active">Service</a>
+            <a href="javascript:void(0)" onclick="openContact()">Contact</a>
+        </nav>
+    </header>
+
+    <section style="padding: 160px 10% 80px; background: #003329; color: white; text-align: center;">
+        <h1 style="font-size: 3rem; color: #ffebd6;">Platform Services</h1>
+        <p style="font-size: 1.2rem; opacity: 0.9;">BSc IT Semester 4 Project | Key Functionalities</p>
+    </section>
+
+    <main style="padding: 80px 10%; text-align: center;">
+        <h2 style="margin-bottom: 40px; color: #003329; font-size: 2.5rem;">What We Provide</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            
+            <div class="video-card" style="padding: 40px; background: white;">
+                <h3 style="color: #003329; margin-bottom: 10px;">API Discovery</h3>
+                <p style="color: #666; font-size: 0.95rem;">Harnesses the YouTube Data API to fetch specialized tutorials directly into our custom UI.</p>
+            </div>
+
+            <div class="video-card" style="padding: 40px; background: white;">
+                <h3 style="color: #003329; margin-bottom: 10px;">Theater Mode</h3>
+                <p style="color: #666; font-size: 0.95rem;">A distraction-free viewing experience that hides platform clutter so you can focus on creating.</p>
+            </div>
+
+            <div class="video-card" style="padding: 40px; background: white;">
+                <h3 style="color: #003329; margin-bottom: 10px;">Smart Filtering</h3>
+                <p style="color: #666; font-size: 0.95rem;">Automated logic to block Shorts and low-quality content, ensuring only high-value tutorials are shown.</p>
+            </div>
+
+        </div>
+
+        <div style="margin-top: 60px; line-height: 1.8; color: #555; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <p>Our goal was to build a seamless bridge between video repositories and enthusiasts, focusing on clean code and interactive elements.</p>
+        </div>
+    </main>
+
+    <div id="contact-modal" class="modal-overlay">
+        <div class="contact-card">
+            <h3>Contact Team</h3>
+            <p>BSc IT Project Group: XYZ, ZYX, REX</p>
+            <div class="email-box" id="email-text">team.project@email.com</div>
+            <div class="modal-buttons">
+                <button class="modal-btn copy-btn" onclick="copyEmail()">Copy Email</button>
+                <button class="modal-btn close-btn" onclick="closeContactPopup()">Close</button>
+            </div>
+        </div>
+    </div>
+    <div id="contact-modal" class="contact-overlay" onclick="closeContact()">
+    <div class="contact-pill" onclick="event.stopPropagation()">
+        aman.mishra.dev@email.com
+    </div>
+</div>
+
+    <script src="parallex_script.js"></script>
+</body>
+</html>

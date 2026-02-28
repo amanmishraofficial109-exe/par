@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Land | Home</title>
+    <link rel="stylesheet" href="parallex_styles.css">
+    <link rel="stylesheet" href="craft_style.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <a href="javascript:void(0)" onclick="openContact()">Contact</a>
+        </nav>
+    </header>
+
+    <section class="parallax">
+        <h2 id="text">Craft Land</h2>
+        <img src="hill1.png" id="hill1"><img src="hill2.png" id="hill2">
+        <img src="hill3.png" id="hill3"><img src="hill4.png" id="hill4">
+        <img src="hill5.png" id="hill5"><img src="tree.png" id="tree">
+        <img src="leaf.png" id="leaf"><img src="plant.png" id="plant">
+        <button id="scroll-arrow">↓</button>
+    </section>
+
+    <section id="craft-gallery-area">
+        <div class="craft-banner">
+            <h1>Discover Your Craft</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search (e.g., origami, clay)...">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+        <div id="video-gallery" class="gallery-grid"></div>
+    </section>
+
+    <div id="contact-modal" class="contact-overlay" onclick="closeContact()">
+        <div class="contact-pill" onclick="event.stopPropagation()">
+            aman.mishra.dev@email.com
+        </div>
+    </div>
+
+    <script src="parallex_script.js"></script>
+    <script src="craft_script.js"></script>
+</body>
+</html>
